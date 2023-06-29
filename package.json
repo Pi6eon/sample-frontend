@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "npx-install": "npm install -g npx",
     "webpack-install": "npm install --save-dev webpack webpack-cli",
     "webpack-html-plugin": "npm install --save-dev html-webpack-plugin",
     "webpack-server-plugin": "npm install --save-dev webpack-dev-server",
