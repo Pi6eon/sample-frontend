@@ -1,0 +1,33 @@
+{
+  "name": "sample-frontend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "webpack-install": "npm install --save-dev webpack webpack-cli",
+    "webpack-html-plugin": "npm install --save-dev html-webpack-plugin",
+    "webpack-server-plugin": "npm install --save-dev webpack-dev-server",
+    "webpack-loader-plugin": "npm install --save-dev style-loader css-loader",
+    "webpack-typescript-plugin": "npm install --save-dev typescript ts-loader",
+    "webpack-build": "npx webpack --entry ./src/sample_index.js --mode production",
+    "webpack-dev": "npx webpack --config webpack.config.js",
+    "start": "npx webpack serve --config webpack.dev.config.js",
+    "build": "npx webpack --config webpack.prod.config.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "css-loader": "^6.8.1",
+    "html-webpack-plugin": "^5.5.3",
+    "style-loader": "^3.3.3",
+    "ts-loader": "^9.4.4",
+    "typescript": "^5.1.6",
+    "webpack": "^5.88.1",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.1"
+  },
+  "dependencies": {
+    "axios": "^1.4.0"
+  }
+}
